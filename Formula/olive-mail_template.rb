@@ -6,15 +6,7 @@ class OliveMail < Formula
   license "Apache-2.0"
 
   depends_on "himalaya"
-
-  # Build-time only. macOS bottles skip this; Linux compiles from source.
-  on_macos do
-    depends_on xcode: :build
-  end
-
-  on_linux do
-    depends_on "swift" => :build
-  end
+  uses_from_macos "swift" => :build
 
   def install
     args = ["-c", "release", "--product", "olive-mail", "--disable-sandbox"]
