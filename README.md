@@ -2,4 +2,7 @@
 
 This is the Homebrew tap of [Nohype AI](https://nohype.ai).
 
-It provides the Homebrew formula of [MacStack](https://macstack.dev).
+Formulae:
+
+- [MacStack](https://macstack.dev) — `brew install nohype-ai/tap/macstack`
+- [Olive Mail](https://olivemail.ai) — `brew install nohype-ai/tap/olive-mail`

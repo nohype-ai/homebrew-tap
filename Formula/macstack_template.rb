@@ -1,5 +1,5 @@
 class Macstack < Formula
-  desc "Tech stack management based on a personal stack definition"
+  desc "macOS stack management based on a personal stack definition"
   homepage "https://macstack.dev"
   url "https://github.com/nohype-ai/MacStack/archive/refs/tags/<VERSION-PLACEHOLDER>.tar.gz"
   sha256 "<SHA256-PLACEHOLDER>"
