@@ -1,13 +1,13 @@
 class OliveMail < Formula
   desc "Email as context for agents"
   homepage "https://github.com/nohype-ai/olive-mail"
-  url "https://github.com/nohype-ai/olive-mail/archive/refs/tags/v0.1.1.tar.gz"
-  sha256 "8c7e8545eedb0563c015b93bddfe69aad6334728c2a2911aa50b2766c2292ac8"
+  url "https://github.com/nohype-ai/olive-mail/archive/refs/tags/v0.1.2.tar.gz"
+  sha256 "3bc191a7f62c09757d4426fbf8a432a4e05fab2925dae3411c8674e74b79c3ac"
   license "Apache-2.0"
 
   bottle do
     root_url "https://raw.githubusercontent.com/nohype-ai/homebrew-tap/main/Bottles"
-    sha256 arm64_golden_gate: "49ec8602f2ac793111e08dd49134fe77196b075214771153026fa2b78be73b11"
+    sha256 arm64_golden_gate: "f34e5c1c0dc7c3b3a020a9cabbea544cd08b2a7c7bdaae89d4c9f8505b997f72"
   end
 
   depends_on "himalaya"
