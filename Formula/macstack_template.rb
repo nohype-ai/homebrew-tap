@@ -8,6 +8,7 @@ class Macstack < Formula
   depends_on "jq"
   depends_on "node"
   depends_on "check-jsonschema"
+  depends_on "super-keys"
 
   def install
     prefix.install "bin"
