@@ -1,13 +1,13 @@
 class SuperKeys < Formula
   desc "Global hotkeys for macOS"
   homepage "https://github.com/nohype-ai/SuperKeys"
-  url "https://github.com/nohype-ai/SuperKeys/archive/refs/tags/v0.1.0.tar.gz"
-  sha256 "bce1bbd31ad36213958c6e35198b986321e6896bfd239136f217a282e5298c57"
+  url "https://github.com/nohype-ai/SuperKeys/archive/refs/tags/v0.1.1.tar.gz"
+  sha256 "0f383a29255de0fff0e0bab0d22eb1c5aa26a6c466f5e73b8992c7673fd9a884"
   license "MIT"
 
   bottle do
     root_url "https://raw.githubusercontent.com/nohype-ai/homebrew-tap/main/Bottles"
-    sha256 cellar: :any_skip_relocation, arm64_golden_gate: "3464e3cd915ca8b45433cbb8e5573c2846d065d25775ca1b578909dd4bd20c45"
+    sha256 cellar: :any_skip_relocation, arm64_golden_gate: "23c6344f17a0062960d870b240aa1903c9a63b5720104272c915edb0a535a0d3"
   end
 
   depends_on macos: :ventura
@@ -20,11 +20,14 @@ class SuperKeys < Formula
 
   def caveats
     <<~EOS
-      super-keys registers global hotkeys and stays running until quit.
+      Register the login agent and start it:
+        super-keys
+
+      It comes back at login. Log: ~/Library/Logs/super-keys.log
+      Stop it until the next login or the next `super-keys`:
+        super-keys stop
 
       macOS asks for Input Monitoring the first time it runs.
-      A LaunchAgent can start it at login; the binary is:
-        #{opt_bin}/super-keys
     EOS
   end
 
