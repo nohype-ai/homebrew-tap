@@ -1,13 +1,17 @@
 class SuperKeys < Formula
   desc "Global hotkeys for macOS"
   homepage "https://github.com/nohype-ai/SuperKeys"
-  url "https://github.com/nohype-ai/SuperKeys/archive/refs/tags/v0.1.1.tar.gz"
-  sha256 "0f383a29255de0fff0e0bab0d22eb1c5aa26a6c466f5e73b8992c7673fd9a884"
+  url "https://github.com/nohype-ai/SuperKeys/archive/refs/tags/v0.1.2.tar.gz"
+  sha256 "845b258e86f70b37572e7f1c51e937ae6bd0bc7777b40b006c6d5c22ce81b944"
   license "MIT"
 
   bottle do
     root_url "https://raw.githubusercontent.com/nohype-ai/homebrew-tap/main/Bottles"
-    sha256 cellar: :any_skip_relocation, arm64_golden_gate: "23c6344f17a0062960d870b240aa1903c9a63b5720104272c915edb0a535a0d3"
+    sha256 cellar: :any_skip_relocation, arm64_golden_gate: "ce7622578d41413fc70b27b321428df0634362cd4057999d385c2caa10a956ec"
+    sha256 cellar: :any_skip_relocation, arm64_tahoe: "ce7622578d41413fc70b27b321428df0634362cd4057999d385c2caa10a956ec"
+    sha256 cellar: :any_skip_relocation, arm64_sequoia: "ce7622578d41413fc70b27b321428df0634362cd4057999d385c2caa10a956ec"
+    sha256 cellar: :any_skip_relocation, arm64_sonoma: "ce7622578d41413fc70b27b321428df0634362cd4057999d385c2caa10a956ec"
+    sha256 cellar: :any_skip_relocation, arm64_ventura: "ce7622578d41413fc70b27b321428df0634362cd4057999d385c2caa10a956ec"
   end
 
   depends_on macos: :ventura
