@@ -15,11 +15,14 @@ class SuperKeys < Formula
 
   def caveats
     <<~EOS
-      super-keys registers global hotkeys and stays running until quit.
+      Register the login agent and start it:
+        super-keys
+
+      It comes back at login. Log: ~/Library/Logs/super-keys.log
+      Stop it until the next login or the next `super-keys`:
+        super-keys stop
 
       macOS asks for Input Monitoring the first time it runs.
-      A LaunchAgent can start it at login; the binary is:
-        #{opt_bin}/super-keys
     EOS
   end
 
