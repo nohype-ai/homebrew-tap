@@ -23,6 +23,8 @@ class SuperKeys < Formula
         super-keys stop
 
       macOS asks for Input Monitoring the first time it runs.
+      Bindings: ~/.config/super-keys/bindings.toml
+      The first run creates that file. Add binds, then run `super-keys` again.
     EOS
   end
 
